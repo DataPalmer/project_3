@@ -16,6 +16,7 @@ fetch(url)
       totalEmissionsByCountry[country] += total;
     }
     const sorted = Object.entries(totalEmissionsByCountry).slice(-5);
+    // const sorted = Object.fromEntries( Object.entries(totalEmissionsByCountry).slice(-5)
     console.log(sorted);
   })
 
