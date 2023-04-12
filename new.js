@@ -15,11 +15,8 @@ fetch(url)
       }
       totalEmissionsByCountry[country] += total;
     }
-    console.log(totalEmissionsByCountry);
-
-
-    var sorted = totalEmissionsByCountry.slice(0,5).reverse();
-      console.log(sorted);
+    const sorted = Object.entries(totalEmissionsByCountry).slice(-5);
+    console.log(sorted);
   })
 
 
